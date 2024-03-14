@@ -1,0 +1,41 @@
+{
+    "name": "elysiumrealms/queue-exporter",
+    "description": "Excel Queue Exporter",
+    "license": "MIT",
+    "keywords": ["queue", "dcat", "excel", "exporter"],
+    "type": "library",
+    "authors": [
+        {
+            "name": "deflinhec",
+            "email": "deflinhec@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "dcat/easy-excel": "^1.1",
+        "dcat/laravel-admin": "^1.7.9",
+        "laravel/framework": "^8.12",
+        "elysiumrealms/sql-interceptor": "^v1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Elysiumrealms\\QueueExporter\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Elysiumrealms\\QueueExporter\\QueueExporterServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": "@prepare"
+    }
+}

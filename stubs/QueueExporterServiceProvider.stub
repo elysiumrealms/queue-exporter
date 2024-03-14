@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Providers;
+
+use Elysiumrealms\QueueExporter\QueueExporterServiceProvider as ServiceProvider;
+
+class QueueExporterServiceProvider extends ServiceProvider
+{
+    /**
+     * Bootstrap any application services.
+     */
+    public function boot(): void
+    {
+        parent::boot();
+    }
+}
